@@ -1,0 +1,304 @@
+{% extends "base.html" %} {% block title %}Gallery{% endblock %} 
+{% block content %}
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/gallery.css')}}">
+
+  
+   
+
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Hello</h1>
+        <p>Welcome to Our Gallery</p>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h3>Art</h3>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="{{url_for('static', filename='images/a.jpg')}}">
+              <div class="caption">
+                <p id="paintingName">Sky and Boat.</p>
+              </div>
+              <img
+                src="{{url_for('static', filename='images/a.jpg')}}"
+                class="img-responsive"
+                style="width: fit-content"
+                alt="ImageA"
+              />
+            </a>
+          
+            <div>
+              <button  style="background-color: transparent; border-color: transparent;">
+                <svg id="likesvg7" onclick="like7()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+              
+              </button>
+             </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="{{url_for('static', filename='images/b.jpg')}}">
+              <div class="caption">
+                <p id="paintingName">Sunset</p>
+              </div>
+              <img
+                src="{{url_for('static', filename='images/b.jpg')}}"
+                class="img-responsive"
+                style="width: fit-content"
+                alt="ImageB"
+              />
+            </a>
+            <div>
+              <button  style="background-color: transparent; border-color: transparent;">
+                <svg id="likesvg6" onclick="like6()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+              
+              </button>
+             </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="{{url_for('static', filename='images/c.jpg')}}">
+              <div class="caption">
+                <p id="paintingName">Tree</p>
+              </div>
+              <img
+                src="{{url_for('static', filename='images/c.jpg')}}"
+                class="img-responsive"
+                style="width: fit-content"
+                alt="ImageC"
+              />
+            </a>
+            <div>
+              <button  style="background-color: transparent; border-color: transparent;">
+                <svg id="likesvg5" onclick="like5()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+              
+              </button>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="{{url_for('static', filename='images/d.jpg')}}">
+              <div class="caption">
+                <p id="paintingName">Farm</p>
+              </div>
+              <img
+                src="{{url_for('static', filename='images/d.jpg')}}"
+                class="img-responsive"
+                style="width: fit-content"
+                alt="ImageD"
+              />
+            </a>
+            <div>
+              <button  style="background-color: transparent; border-color: transparent;">
+                <svg id="likesvg4" onclick="like4()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+              
+              </button>
+             </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="{{url_for('static', filename='images/e.jpg')}}">
+              <div class="caption">
+                <p id="paintingName">Flower</p>
+              </div>
+              <img
+                src="{{url_for('static', filename='images/e.jpg')}}"
+                class="img-responsive"
+                style="width: fit-content"
+                alt="ImageE"
+              />
+            </a>
+            <div>
+              <button  style="background-color: transparent; border-color: transparent;">
+                <svg id="likesvg3" onclick="like3()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+              
+              </button>
+             </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="{{url_for('static', filename='images/f.jpg')}}">
+              <div class="caption">
+                <p id="paintingName">Starry Night</p>
+              </div>
+              <img
+                src="{{url_for('static', filename='images/f.jpg')}}"
+                class="img-responsive"
+                style="width: fit-content"
+                alt="ImageF"
+              />
+            </a>
+            <div>
+              <button  style="background-color: transparent; border-color: transparent;">
+                <svg id="likesvg2" onclick="like2()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+              
+              </button>
+             </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="{{url_for('static', filename='images/g.png')}}">
+              <div class="caption">
+                <p id="paintingName">Seaside</p>
+              </div>
+              <img
+                src="{{url_for('static', filename='images/g.png')}}"
+                class="img-responsive"
+                style="width: fit-content"
+                alt="ImageG"
+              />
+            </a>
+            <div>
+              <button  style="background-color: transparent; border-color: transparent;">
+                <svg id="likesvg1" onclick="like1()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+              
+              </button>
+             </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="{{url_for('static', filename='images/h.jpg')}}">
+              <div class="caption">
+                <p id="paintingName">Woman</p>
+              </div>
+              <img
+                src="{{url_for('static', filename='images/h.jpg')}}"
+                class="img-responsive"
+                style="width: fit-content"
+                alt="ImageH"
+              />
+            </a>
+            <div>
+              <button  style="background-color: transparent; border-color: transparent;">
+                <svg id="likesvg" onclick="like()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg>
+              
+              </button>
+             </div>
+          </div>
+        </div>
+
+    <br /><br />
+  <script>
+    function like(){
+      var svg=document.getElementById('likesvg');
+      var path = svg.querySelector('path');
+      if(path.getAttribute('fill') === 'red'){
+        path.setAttribute('fill', 'white');
+        
+      }else{
+        path.setAttribute('fill', 'red')
+      }
+    }
+
+    function like1(){
+      var svg=document.getElementById('likesvg1');
+      var path = svg.querySelector('path');
+      if(path.getAttribute('fill') === 'red'){
+        path.setAttribute('fill', 'white');
+        
+      }else{
+        path.setAttribute('fill', 'red')
+      }
+    }
+
+    function like2(){
+      var svg=document.getElementById('likesvg2');
+      var path = svg.querySelector('path');
+      if(path.getAttribute('fill') === 'red'){
+        path.setAttribute('fill', 'white');
+        
+      }else{
+        path.setAttribute('fill', 'red')
+      }
+    }
+
+    function like3(){
+      var svg=document.getElementById('likesvg3');
+      var path = svg.querySelector('path');
+      if(path.getAttribute('fill') === 'red'){
+        path.setAttribute('fill', 'white');
+        
+      }else{
+        path.setAttribute('fill', 'red')
+      }
+    }
+
+    function like4(){
+      var svg=document.getElementById('likesvg4');
+      var path = svg.querySelector('path');
+      if(path.getAttribute('fill') === 'red'){
+        path.setAttribute('fill', 'white');
+        
+      }else{
+        path.setAttribute('fill', 'red')
+      }
+    }
+
+    function like5(){
+      var svg=document.getElementById('likesvg5');
+      var path = svg.querySelector('path');
+      if(path.getAttribute('fill') === 'red'){
+        path.setAttribute('fill', 'white');
+        
+      }else{
+        path.setAttribute('fill', 'red')
+      }
+    }
+
+    function like6(){
+      var svg=document.getElementById('likesvg6');
+      var path = svg.querySelector('path');
+      if(path.getAttribute('fill') === 'red'){
+        path.setAttribute('fill', 'white');
+        
+      }else{
+        path.setAttribute('fill', 'red')
+      }
+    }
+
+    function like7(){
+      var svg=document.getElementById('likesvg7');
+      var path = svg.querySelector('path');
+      if(path.getAttribute('fill') === 'red'){
+        path.setAttribute('fill', 'white');
+        
+      }else{
+        path.setAttribute('fill', 'red')
+      }
+    }
+  </script>
+    
+{% endblock %}
